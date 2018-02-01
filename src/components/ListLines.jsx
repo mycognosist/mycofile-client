@@ -1,4 +1,5 @@
 import React from 'react';
+import ActiveButton from './ActiveButton';
 
 // IF statement to determine text color
 
@@ -11,8 +12,15 @@ const ListLines = (props) => {
             <div key={ line.id } className="fl fl w-20">
               <p><strong className="green f4">[ { line.container } ]</strong></p>
               <p>{ line.culture_id }</p>
-	      <button className="shadow-4 b-blue bg-base03 green ba b--base03 ph3 pv1">Active</button>
-              <button className="shadow-4 b-blue bg-base03 green ba b--base03 ph3 pv1">Expand</button>
+	      <ActiveButton
+		active={ line.active }
+		line_object_id={ line.id }
+	      />
+              <button
+		className="shadow-4 b-blue bg-base03 green ba b--base03 ph3 pv1"
+		onClick={() => alert('click')}>
+		Expand
+	      </button>
             </div>
           )
         })

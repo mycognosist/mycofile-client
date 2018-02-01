@@ -25,7 +25,6 @@ class App extends Component {
       substrate: '',
       treatment: '',
       parent_id: '',      
-      active: '',
       total_cultures: '',
       total_lines: ''
     }
