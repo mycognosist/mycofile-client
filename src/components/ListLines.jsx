@@ -18,7 +18,7 @@ const ListLines = (props) => {
 	      />
               <button
 		className="shadow-4 b-blue bg-base03 green ba b--base03 ph3 pv1"
-		onClick={() => alert('click')}>
+		onClick={() => console.log('Parent:', line.id, 'Culture ID:', line.culture_id)}>
 		Expand
 	      </button>
             </div>
